@@ -3,7 +3,7 @@
 Spyder Editor
 
 copy right: NG wang (Qingsong Wang)
-email: 172034046@qq.com // nothing2wang@hotmail.com // nothing2wang@gmail.com
+email: 172034046@qq.com // nothing2wang@hotmail.com
 
 This is a temporary script file.
 
@@ -15,9 +15,8 @@ Introduction To Algorithms  3rd Edition
 ################################################################
 'page_18'
 
-'''
 
-This insertion sort functon is sorted by increasing sort
+'This insertion sort functon is sorted by increasing sort'
 
 
 def insertion_sort(A):
@@ -31,19 +30,16 @@ def insertion_sort(A):
     return A
     
 ########    
-example:
+#example:
     A=[3,1,2,6,5,4,8,7]
     insertion_sort(A)
     
-'''
 ###############################################################
 
 ' P_22---2.1-2'
 
-'''
-This insertion sort function is sorted by decreasing sort
-'''
-'''
+'This insertion sort function is sorted by decreasing sort'
+
 def insertion_sort_de(A):
     for j in range(1,len(A)):
         key=A[j]
@@ -55,15 +51,13 @@ def insertion_sort_de(A):
     return A
     
 #########    
-example:
+#example:
     A=[3,1,2,6,5,4,8,7]
     insertion_sort_de(A)
     
-'''
 ##############################################################
 'P_22-----2.1-3'
 
-'''
 def find_element(a,A):
     i='not in list'
     for j in range(1,len(A)):
@@ -73,17 +67,16 @@ def find_element(a,A):
     return i
     
 ########    
-example:
+#example:
     a=2,A=[2,3,4,7,8]
     find_element(a,A)
     a=9,A=[2,3,4,7,8]
     find_element(a,A)
-'''
+    
 ###########################################################
 'P_22----2.1-4'
 'only work for the same length'
 
-'''
 def add_two_n_binary_integer(A,B):
     carry=0
     C=list(range(len(A)+1))
@@ -97,14 +90,13 @@ def add_two_n_binary_integer(A,B):
     return C
     
 #######
-example:
+#example:
     A[1,1,1],B=[1,1,1]
     add_two_n_binary_integer(A,B)
-'''
+
 ##############################################################
 'P_29----2.2-2'
 
-'''
 def selection_algorithm(A):
     for i in range(0,len(A)):
         min_int=i
@@ -114,16 +106,14 @@ def selection_algorithm(A):
     return A
     
 ########    
-example:
+#example:
     A=[3,1,2]
     selection_algorithm(A)
 
-'''
 ####################################################
 
 'P_31----MERGE(A,p,q,r)'
 
-'''
 
 def merge_two_sorted_list(A,p,q,r):
     n1=q-p+1
@@ -152,15 +142,13 @@ def merge_two_sorted_list(A,p,q,r):
     return A
     
 ########
-example:            
+#example:            
     A=[2,4,5,7,1,2,3,6]       
     merge_two_sorted_list(A,0,3,7)  
-
-'''    
+  
 ###########################################################
 'P_34----MERGE_SORT(A,p,r)'
 
-'''
 def merge_two_sorted_list(A,p,q,r):
     n1=q-p+1
     n2=r-q
@@ -195,14 +183,13 @@ def Merge_Sort(A,p,r):
     return A
     
 #######
-example:
+#example:
     A=[2,4,5,7,1,2,3,6] 
     Merge_Sort(A,0,7)
-'''
+    
 #########################################################
 'P_37---2.3-2'
 
-'''
 def Merge_two_sorted_method2(A,p,q,r):
     n1=q-p+1
     n2=r-q
@@ -235,15 +222,14 @@ def Merge_two_sorted_method2(A,p,q,r):
     return A
     
 #######   
-example:
+#example:
     A=[2,4,5,7,1,2,3,6,8]
     Merge_two_sorted_method2(A,0,3,8)  
-'''            
+    
 ############################################################# 
 
 'P_39----2.3-5'
 
-'''
 def BinSearch_in_sorted_list(A,a,b,v):
     'A is the sorted list,'
     'a,b are index range'
@@ -257,15 +243,16 @@ def BinSearch_in_sorted_list(A,a,b,v):
         return BinSearch_in_sorted_list(A,m+1,b,v)
         
 ########
-example:
+#example:
     A=[1, 2, 3, 4, 5, 6, 7, 8]
     BinSearch_in_sorted_list(A,0,7,3)
-'''   
+ 
 ################################################################
 
 'P_39----2.3-7'
-'''
+
 'A is a sorted list in increase, A[i]+A[j]=s exists?'
+
 def def_cost_is_nlogn(A,s):
     i=0
     j=len(A)-1
@@ -279,15 +266,15 @@ def def_cost_is_nlogn(A,s):
     return False
 
 #######
-example:
+#example:
     A=[1,2,3,4,5]
     def_cost_is_nlogn(A,5) 
     def_cost_is_nlogn(A,10)   
-'''
+
 #####################################################################
 
 'P_40----2-2'
-'''
+
 def Bubble_Sort(A):
     for i in range(0,len(A)-1):
         for j in range(len(A)-1,i,-1):
@@ -296,14 +283,14 @@ def Bubble_Sort(A):
     return A
 
 ########    
-example:
+#example:
     A=[5,4,2,1,3]
     Bubble_Sort(A)
-'''    
+ 
 #########################################################################
 
 'P_42----2-4-d'
-'''
+
 def M_Merge(A,p,q,r):
     inv=0
     n1=p-q+1
@@ -347,14 +334,13 @@ def M_Merge_Sort(A,p,r):
     return 0
 
 ###########
-example:
+#example:
     A=[2,3,8,6,1]
     M_Merge_Sort(A,0,4) 
-'''
+    
 #################################################################3
 'P_42----2-4.d'
 
-'''       
 def count_invserse(A):
     count=0
     for i in range(0,len(A)):
@@ -362,10 +348,12 @@ def count_invserse(A):
             if A[i]>A[j]:
                 count+=1
     return count
+
+###########
+#example
 A=[2,3,8,6,1]
 count_invserse(A)
 
-'''
 ##############################################################
 '''
 That is all of the python code for chapter two
